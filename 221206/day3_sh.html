@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mission 3</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            width: 100vw;
+        }
+        .a1{
+            text-decoration: none;
+        }
+        a:link{
+            color:black;
+        }
+        a:visited{
+            color:black;
+        }
+        a:hover{
+            color:#fae100;
+            text-decoration: none;
+            
+        }
+        a:active{
+            color:black
+        }
+        nav{
+            position: fixed;
+            top:0;
+            left: 0;
+            right: 0;
+        }
+        .menutop{
+            width: 100%;
+            height: 72px;
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border-bottom: 1px solid gray;
+        }
+        .logo{
+            width: auto;
+            height: 24.5px;
+            padding-left: 15px
+        }
+        .menu{
+            padding: 0;
+            position:absolute;
+            right:0px;
+
+        }
+        li{
+            display: inline-block;
+            margin-right: 15px;
+        }
+        .headerdiv{
+            height: 333.88px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+        .headerimage{
+            width:90vw;
+        }
+        .title{
+            margin: 80px;
+            width: max-content;
+            font-size: 56px;
+            font-weight: bold;
+        }
+        .divsection{
+            width:100vw;
+            display:flex;
+            flex-direction: row;
+        }
+        .div1{
+            padding-left: 80px;
+            padding-right: 80px;
+            width: 50%;
+            font-size:32px;
+            font-weight:bold;
+        }
+        .subdiv{
+            margin-top: 20px;
+            margin-right: 20px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 2;
+            color: rgb(137, 137, 137);
+        }
+        .divicon{
+            width:100vw;
+            margin-top: 50px;
+            display:flex;
+        }
+        .a2{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+        .a2.hover{
+
+            color:rgb(194, 194, 194)
+        }
+        .divilist{
+            padding-left: 80px;
+            width: max-content
+            
+        }
+        .atext{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .processing{
+            padding: 80px;
+        }
+
+        .dot{
+            height: 16px;
+            width: 16px;
+            background-color: #fae100;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .boxlist{
+            border: 1px;
+            padding: 12px;
+            margin: 5px;
+            background-color: #f3f3f3;
+            border-radius: 13px;
+            font-weight: lighter;
+            }
+
+
+        .imgarea{
+            margin-top: 20px;
+        }
+
+        .processsection{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .processarea{
+            margin-top: 15px;
+            display: flex;
+            width: 31%;
+            color: rgb(137, 137, 137)
+        }
+        .processlist{
+            padding: 0px;
+            font-size: 15px;
+            line-height: 30px;
+            color: rgb(137, 137, 137)
+        }
+
+        .bottom{
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+
+        footer{
+            width: 100vw;
+            height: 100px;
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            background-color: black;
+
+        }
+        .footerkakao{
+            width: 23%;
+            font-size:14px;
+            color: white;
+            text-align: center;
+        }
+        .a3{
+            text-decoration: none;
+        }
+
+        .sns{
+            width: 23%;
+            display: flex;
+            align-items: center;
+        }
+        .snslist{
+            width: max-content;
+            position: absolute;
+            right: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class ="menutop">
+            <img class ="logo" src="https://rmkcdn.successfactors.com/c4444335/4a31a1a2-9f7e-471f-81d9-c.svg">
+
+
+            <ul class ="menu">
+                <li class ="list"><a class ="a1" href="https://careers.kakaoenterprise.com/content/process/?locale=ko_KR">영입과정</a></li>
+                <li><a class ="a1" href="https://careers.kakaoenterprise.com/go/Category_All/546844/">영입공고</a></li>
+                <li><a class ="a1" href="https://careers.kakaoenterprise.com/go/Category_Research/547344/">리서치프로그램</a></li>
+                <li><a class ="a1" href="https://careers.kakaoenterprise.com/content/welfare/?locale=ko_KR">크루 복지</a></li>
+                <li><a class ="a1" href="https://careers.kakaoenterprise.com/content/faq/?locale=ko_KR">자주 묻는 질문</a></li>
+                <li><a class ="a1" href="https://forms.gle/oJ8qjNeq7BknHVKT7">인재풀 등록</a></li>
+                <li><a class ="a1" href="https://careers.kakaoenterprise.com/talentcommunity/subscribe/?locale=ko_KR">마이페이지</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class = "headerdiv">
+           <img class = "headerimage" src ="https://rmkcdn.successfactors.com/c4444335/d7ade7ef-39a0-487e-8b40-0.png">
+        </div>
+    </header>
+    <div>
+        <p class = "title">내일을 함께할<br>크루를 찾습니다.</p>
+    </div>
+
+    <section class = "divsection">
+        <div class = "div1">
+            당신을 영입합니다
+            <div class = "subdiv"> 채용하지 않고 영입합니다. 채용은 ‘사람을 골라 쓴다’는 뜻이지만,
+                영입은 ‘환영하고 받아들인다’는 뜻이기 때문입니다. 기대와 환대,
+                존중의 마음을 담아 새로운 크루를 맞이할 준비를 합니다.
+            </div>
+        </div>
+        <div class = "div1">
+            영입도 팀워크입니다
+            <div class = "subdiv"> 
+                영입은 모든 크루들이 참여하는 중요한 의사결정 과정입니다. 충분한
+                대화와 수평적인 토론을 거쳐, 조직과 업무의 성격에 꼭 맞는 
+                새 크루의 영입이 결정됩니다.    
+            </div>
+        </div>
+    </section>
+
+    <section class = "divicon">
+        <a class = "a2" href ="https://careers.kakaoenterprise.com/go/Category_All/546844/">
+            <ul class = "divilist">
+                <li style="display: flex; align-items: center;"> <img src ="https://rmkcdn.successfactors.com/c4444335/823acf5e-8708-49e6-91fe-9.png"; width="30px"; style = "margin-right: 10px;">
+                <img src ="https://rmkcdn.successfactors.com/c4444335/98bb918d-65a8-47e0-bc56-a.png"; width="52px";></li>
+                <p class = "atext">영입공고 보기</p>
+            </ul>            
+        </a>
+
+        <a class = "a2" href ="https://www.kakaoenterprise.com/introduce/company/">
+            <ul class = "divilist">
+                <li style="display: flex; align-items: center;"><img src ="https://rmkcdn.successfactors.com/c4444335/823acf5e-8708-49e6-91fe-9.png"; width="30px"; style = "margin-right: 10px;">
+                <img src ="https://rmkcdn.successfactors.com/c4444335/afaf35e6-e543-4e5a-b99a-3.png"; width="52px";></li>
+                <p class = "atext">회사 소개 보기</p>
+            </ul>
+        </a>
+    </section>
+
+    <section class = "processing">
+        <span class = "dot"></span>
+        <h2>영입 프로세스</h2>
+        <p style="font-size: 32px; font-weight: 700; max-width: 650px; line-height: 50px;">카카오엔터프라이즈의 영입은 크루에 대한 기대와 존중, 팀워크의 가치를 생각하는데서 시작합니다.</p>
+        
+        
+        <ul class = "boxul" style="padding: 0px;">
+            <a class = "a4" href= ' '><li class ="boxlist" style="background-color: #fae100">테크</li></a>
+            <a class = "a4" href= ' '><li class ="boxlist">디자인</li></a>
+            <a class = "a4" href= ' '><li class ="boxlist">서비스기획</li></a>
+            <a class = "a4" href= ' '><li class ="boxlist">비즈니스</li></a>
+            <a class = "a4" href= ' '><li class ="boxlist">경영지원</li></a>
+        </ul>
+
+        <div class= "imgarea">
+            <img src = "https://s.kakaoicdn.net/kep-static/kep-career/img_process_tech.png" width="100%">
+        </div>
+
+        <section class = "processsection">
+            <div class="processarea">
+                <ul style="padding: 0px;">
+                    <p style="font-size: 30px; font-weight: 900; line-height: 35px; color: black">1</p>
+                    <p style="font-size: 16px; line-height: 30px; margin-right: 20px;">당신에게 어울리는 포지션을 지금 찾아보세요! 지원하신 서류를 꼼꼼히 확인하여 합격자에게는 코딩테스트 응시 안내를 드립니다.</p>
+                </ul>
+            </div>
+            <div class="processarea">
+                <ul style="padding: 0px">
+                    <p style="font-size: 30px; font-weight: 900; line-height: 35px; color: black">2</p>
+                    <p style="font-size: 16px; line-height: 30px; margin-right: 20px;">테크직군은 코딩테스트를 기본으로 진행합니다. 코딩테스트 합격 후 지원 부서 크루와의 만남이 시작됩니다.</p>
+                </ul>
+                </div>
+            <div class="processarea">
+                <ul style="padding: 0px">
+                    <p style="font-size: 30px; font-weight: 900; line-height: 35px; color: black">3</p>
+                    <p style="font-size: 16px; line-height: 30px;">간결한 테크리뷰를 통해 인터뷰 전 지원 포지션과의 핏을 살펴봅니다. 제출하신 코딩테스트 답안을 작성한 로직에 대해 리뷰하고, 직무역량을 확인하는 대화를 나누게 됩니다.</p>
+                </ul>
+            </div>
+        </section>
+
+        <section class = "processsection">
+            <div class="processarea">
+                <ul style="padding: 0px">
+                    <p style="font-size: 30px; font-weight: 900; line-height: 35px; color: black">4</p>
+                    <p style="font-size: 16px; line-height: 30px; margin-right: 20px;">인터뷰는 일반적으로 2차에 나눠 진행됩니다. 경험, 업무, 지향점 등에 대해 충분한 대화를 나누며 서로를 알아갑니다. 인터뷰어가 많아도 놀라지 마세요! 팀워크를 지향하는 카카오엔터프라이즈에서는 팀원 모두가 인터뷰에 참석하기도 한답니다.</p>
+                </ul>
+            </div>
+            <div class="processarea">
+                <ul style="padding: 0px">
+                    <p style="font-size: 30px; font-weight: 900; line-height: 35px; color: black">5</p>
+                    <p style="font-size: 16px; line-height: 30px; margin-right: 20px;">최종 합격 후 처우협의가 진행되며,<br>처우협의 후 입사일을 조율합니다.</p>
+                </ul>
+                </div>
+            <div class="processarea">
+                <ul style="padding: 0px">
+                    <p style="font-size: 30px; font-weight: 900; line-height: 35px; color: black">6</p>
+                    <p style="font-size: 16px; line-height: 30px;">카카오엔터프라이즈 합류를 환영합니다.<br>당신의 영어 호칭은 무엇인가요?</p>
+                </ul>
+            </div>
+        </section>
+
+        <p>
+            <ul class = "processlist">
+                <li>- 세부 전형 내용은 공고마다 상이할 수 있습니다. 변동이 있는 경우 별도 안내를 드리고 있습니다.</li>
+                <li>- 포지션에 따라 테크리뷰가 생략되거나, 인터뷰가 한 차례로 통합되어 진행될 수 있습니다.</li>
+                <li>- 인터뷰를 불합격 했던 지원자가 재지원하고자 할 경우, 최종 지원일로부터 1년 경과 후 가능합니다.</li>
+            </ul>
+        </p>
+        <hr style="margin-top: 100px;">
+    </section>
+
+    <section class = "bottom">
+    <div>
+        <p style="font-size: 32px; font-weight: bold;" >AI 기술을 통해 더 나은
+            <span style="vertical-align: middle;"><img src ="https://rmkcdn.successfactors.com/c4444335/64276ebd-d4ff-4de5-bb41-f.png" width="48px"></span>
+            세상을
+            <br>
+            만드는
+            <span style="vertical-align: middle ;"><img src ="https://rmkcdn.successfactors.com/c4444335/929cf444-734e-44d4-a1af-3.png" width="48px"></span>
+            여정에 함께해주세요.
+        </p>
+    </div>
+    </section>
+    <a class = "a2" href ="https://careers.kakaoenterprise.com/go/Category_All/546844/">
+        <ul class = "divilist">
+            <li style="display: flex; align-items: center;"><img src ="https://rmkcdn.successfactors.com/c4444335/823acf5e-8708-49e6-91fe-9.png"; width="30px"; style = "margin-right: 10px;">
+            <img src ="https://rmkcdn.successfactors.com/c4444335/611e49e9-cad9-4027-9a11-3.png"; width="52px";></li>
+            <p class = "atext">영입공고 보러 가기</p>
+        </ul>            
+    </a>
+
+    <footer>
+        <div class = "footerkakao">
+            ⓒ Kakao Enterprise.
+        </div>
+        <div>
+            <ul style="font-size: 14px; padding: 0">
+                <li><a class = "a3" style="color:rgb(137, 137, 137);" href="https://careers.kakaoenterprise.com/content/terms/?locale=ko_KR">이용약관</a></li>
+                <li><a class = "a3" style="color:rgb(137, 137, 137);" href="https://careers.kakaoenterprise.com/content/privacy/?locale=ko_KR">개인정보처리방침</a></li>
+                <li><a class = "a3" style="color:rgb(137, 137, 137);" href="https://careers-notice.kakaoenterprise.com/info/policy/list">공지사항</a></li>
+                <li><a class = "a3" style="color:rgb(137, 137, 137);" href="https://www.kakaoenterprise.com/board/list/notice">회사소식</a></li>
+                <li><a class = "a3" style="color:rgb(137, 137, 137);" href="https://kakaoenterprise.com/info/about/">오시는 길</a></li>
+                <li><a class = "a3" style="color:rgb(137, 137, 137);" href="mailto:recruit.kx@kakaoenterprise.com">recruit.kx@kakaoenterprise.com</a></li>
+            </ul>
+        </div>
+        <div class = "sns">
+            <ul class = "snslist">
+                <li><a href="https://tech.kakaoenterprise.com/">
+                    <img src ="https://rmkcdn.successfactors.com/c4444335/56ef3a0e-77d5-4d08-b382-e.png" width="24px"></a>
+                </li>
+                <li><a href="hhttps://www.facebook.com/kakaoenterprise/">
+                    <img src ="https://rmkcdn.successfactors.com/c4444335/b974294a-056e-4a41-8faf-b.png" width="24px"></a>
+                </li>
+                <li><a href="https://pf.kakao.com/_lVmtT">
+                    <img src ="https://rmkcdn.successfactors.com/c4444335/7cd71415-3f55-4c2e-8dd3-6.svg" width="24px"></a>
+                </li>
+                <li><a href="https://www.youtube.com/kakaoenterprise">
+                    <img src ="https://rmkcdn.successfactors.com/c4444335/3e849224-0f2d-4a76-87cd-6.png" width="24px"></a>
+                </li>
+                <li><a href="https://www.instagram.com/kakaoenterprise/">
+                    <img src ="https://rmkcdn.successfactors.com/c4444335/b2088b20-0330-4538-b745-c.png" width="24px"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
+

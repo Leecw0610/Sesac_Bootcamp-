@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>생활코딩 강의 - html</title>
+        <meta charset="utf-8">
+    </head>
+    <body style="text-align: left;">
+
+
+        <h3><u>6강 기본문법 태그</u></h3>
+
+            <h6>열리는 태그(tag) // 닫히는 태그</h6>
+            <h6>[TAG] strong , u<br><br>
+            TAG ; 태그안의 내용을 설명함</h6>
+
+        <h3><u>7강 혁명적인 변화</u></h3>
+
+            <h1>This is heading 1</h1>
+            <h2>This is heading 2</h2>
+            <h3>This is heading 3</h3>
+            <h4>This is heading 4</h4>
+            <h5>This is heading 5</h5>
+            <h6>This is heading 6</h6>
+
+        <h3><u>8강 통계에 기반한 학습</u></h3>
+
+        <h3><u>9강 줄바꿈 :br vs p</u></h3>
+
+        <h3><u>10강 html이 중요한 이유</u></h3>
+
+        <h3><u>11강 최후의 문법 속성 & img</u></h3>
+            <ol>
+                <li> a:href</li>
+                <p>- <strong>anchor</strong> 의 약자 ('닻')<br><br>
+                - <strong>hypertext reference</strong> 의 약자로 연결할 주소를 지정하는 속성</p>
+                <li> img:src</li>
+                <p><strong>img source</strong>의 약자로 이미지를 끌어오는데 사용</p>
+                <li> img:alt</li><br>
+                이미지를 보여줄 수 없을 때 해당 이미지를 대체할 텍스트를 명시합니다.
+                <img alt="관련 사진 01"><br><br>
+
+                <li> p:style</li><br>
+            
+                스타일(style)로 폰트 속성을 줄 때, 한꺼번에 줄 수도 있고, 항목을 각각 지정하여 줄 수도 있다.
+                <p>
+                <ul>
+                <li>색   상  color: 색상이름 또는 색상코드 ;</li>
+                <li>굵   기  font-weight: bold ;</li>
+                <li>기울임  font-style: italic;</li>
+                <li>크   기  font-size: 숫자px, 숫자% 또는 숫자em ;</li>
+                <li>글   꼴  font-family: 굴림, 돋움, 궁서, Arial, 등등 ;</li>
+                <li>줄높이  line-height: 숫자px, 숫자% 또는 숫자em ;</li></ul>
+                Ex))<p style="
+                font-size: 25px; 
+                color :#00C73A; 
+                font-family:돋움;
+                "> 
+                안녕하세요<br> Hello ! web! <strong>:D</strong></p>
+
+                <span
+                style="
+                font-style: italic ; 
+                font-weight: bold; 
+                font-size: 1.5em;
+                line-height: 1.0em; 
+                color: navy;
+                font-family: 궁서;
+                ">
+                여기는 스타일에서 폰트 속성을 각각 주었다
+                </span><br><br><br><br></p></ol>
+
+        <h3><u>12강 부모자식과 목록</u></h3>
+            <ol>
+            <parent>부모
+            <child>자식</child>
+            </parent>
+
+            li에 반드시 ul이 필요하다!<br>
+            <strong>Orderd List (ol) vs Unordered List (ul)</strong>
+            <p>
+            <li>text-align</li>
+            <br>
+            문단 정렬 방식을 정하는 속성은 text-align입니다. 속성의 값은 다음과 같습니다.
+            <ul>
+            <li>left : 왼쪽 정렬</li>
+            <li>right : 오른쪽 정렬</li>
+            <li>center : 가운데 정렬</li>
+            <li>justify : 양쪽 정렬</li>
+            <li>initial : 기본값으로 설정</li>
+            <li>inherit : 부모 요소의 속성값을 상속 받음</li>
+            </ul></p>
+
+            <p><li>HTML Comment</li><br>
+            <p>HTML에서 주석을 사용할려면 <!-- 와 -->
+            사이에 내용을 넣으면 됩니다.</p>
+
+            <!-- 여기에 주석 내용이 옵니다. -->
+
+            <p>주석은 화면상에 표시되지 않고 소스상에서만 확인할 수 있습니다.</p>
+
+            <p>HTML소스를 작성할때 문서의 수정사항이나 태그의 설명 등을 보기 편하게 하기위해서 사용되는 것입니다.</p>
+
+            <p>주석을 사용하는 이유는 소스가 아주 길고 복잡한 경우 이 소스를 수정할때 알아보기가 힘들기에 주석을 달아놓으면 쉽게 어떤 의도로 이 소스를 작성했는지 알 수 있습니다.</p>
+
+            <p>그리고 여러 사람이 하나의 소스를 공동으로 작업하는 경우에도 일관된 원칙에 따라서 주석을 달아 놓으면 협업에서도 효율성이 증대됩니다.</p>
+
+            <p>HTML을 공부하는 입장에서는 주석의 필요성을 잘 느끼지 못하지만 실무에서는 많이 사용합니다.</p>
+
+            <p><li>HTML Table</li><br>
+            <ul>
+            <ul>-테이블의 구성 요소</ul>
+            <p><li>Table</li>
+            테이블을 만드는 태그</p>
+            <p><li>th </li>
+            테이블의 헤더부분을 만드는 태그</p>
+            <p><li>tr </li>
+            테이블의 행을 만드는 태그</p>
+            <p><li>td </li>
+            테이블의 열을 만드는 태그</p>
+            </ul>
+
+
+
+            <!DOCTYPE html PUBLIC>
+            <html>
+            <head>
+            <meta charset="EUC-KR">
+            <title>초간단 테이블</title>
+            </head>
+            <body>
+            <table border="2">
+            <th>테이블</th>
+            <th>만들기</th>
+            <tr><!-- 첫번째 줄 시작 -->
+            <td>첫번째 칸</td>
+            <td>두번째 칸</td>
+            </tr><!-- 첫번째 줄 끝 -->
+            <tr><!-- 두번째 줄 시작 -->
+            <td>첫번째 칸</td>
+            <td>두번째 칸</td>
+            </tr><!-- 두번째 줄 끝 -->
+            </table>
+            </body></html></p></p></ol></body></html>
+            </p>
+        <h3><u>13강 문서의 구조와 슈퍼스타들</u></h3>
+
+            <ul>
+            <li>head</li>
+            <li>body</li>
+            <li>html</li>
+            <li>doctype</li>
+            <li>meta</li>
+            </ul>
+            </p>
+        <h3><u>14강 HTML 태그의 제왕</u></h3>
+            <strong>anchor ; 배의 '닻'을 의미. 'a'
+            --> link!</strong><br><br>
+
+            <strong>a href</strong>
+            </p>
+        <h3><u>15강 웹사이트 완성</u></h3>
+            <p>
+                index+ex_01~03 완성!
+            </p>
+        <h3><u>16강 원시웹</u></h3>
+            <p>Internet vs Web</p>
+        <h3><u>17강 인터넷을 여는 열쇠 : 서버와 클라이언트</u></h3>
+            <p>
+            Web Browser(Clinet) <--> Web Server(Server)
+            </p>
+        <h3><u>18강 웹호스팅 : github page</u></h3>
+            <p>
+                
+            </p>
+        <h3><u>19강 웹서버 운영하기</u></h3>
+            <p>
+                
+            </p>
+        <h3><u>20강 수업을 마치며</u></h3>
+            <p>
+                
+            </p>
+            <br><br>
+        <br><p><h2> DAY 1</h2>
+
+            <li>HTML Lists</li><br>
+            <strong>ol,ul,li<br></strong><br>
+            <strong>dl</strong>태그는 제목과 설명이 한 쌍인 <strong>설명 목록(description list)을 만들 때 사용</strong>한다. dt와 dd와 함께 사용되며, <strong>dt는 제목을 표시하며 dd는 설명(내용)을 표시한다.</strong><br>
+            <br><li>HTML Class & Id</li><br>
+            id 는 스타일을 지정할 때 한 가지만 지정해서 쓰는 이름이고(표기방식은 #이름) 하나의 문서에 고유한 id 하나밖에 쓸 수 없음<br><br>
+            class 그룹으로 묶어서 스타일을 지정할 때 씀<br><br>
+            <br><li>시멘틱 HTML</li><br>
+            <br> 특정한 태그에 의미를 부여해서 웹페이지를 만드는 시도가 시작, 이를 시멘틱웹이라고 표현<br><strong>(div 태그와 같은 기능을 수행)</strong><br>
+        <ul> <li>header </li><br>
+        
+        헤더를 의미 <br>
+        
+        <br><li>nav </li><br>
+        
+        내비게이션을 의미<br> 
+        
+        <br><li>aside </li><br>
+        
+        사이드에 위치하는 공간을 의미 <br>
+        
+        <br><li>section </li><br>
+        
+        여러 중심 내용을 감싸는 공간을 의미 <br>
+        
+        <br><li>article </li><br>
+        
+        글자가 많이 들어가는 부분을 의미 <br>
+        
+        <br><li>footer</li><br>
+        
+        푸터를 의미 <br>
+            </ul>
+        <br></p>
+                
+    </body>
+</html>

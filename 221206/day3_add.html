@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day3_CSS_copy</title>
+
+  <style>
+    html {
+      -webkit-text-size-adjust: 100%;
+    }
+
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .divUl {
+      height: 80px;
+      display: flex;
+
+      justify-content: space-between;
+    }
+
+    .box1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin-right: 30px;
+    }
+
+    .box2 {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      align-items: center;
+
+
+    }
+
+    li {
+      margin-right: 10px;
+    }
+
+    .first_image_section {
+      height: 370px;
+      background-color: black;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .first_image_section div {
+      width: 90%;
+      height: 100%;
+      background: url(https://rmkcdn.successfactors.com/c4444335/d7ade7ef-39a0-487e-8b40-0.png) 50% 50% no-repeat;
+      background-size: 100%;
+    }
+
+    .first_title_section * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .first_title_section {
+      padding: 50px 0;
+      font-size: 40px;
+      font-weight: bold;
+      line-height: 1.29;
+      color: #000;
+      display: block;
+      word-break: keep-all;
+      text-align: left;
+    }
+
+    .section1 {
+      display: flex;
+      width: 100%;
+      padding: 0 0 100px 0;
+      position: relative;
+    }
+    .section1 div1 {
+      font-size: 32px;
+    font-weight: bold;
+    line-height: 47px;
+    letter-spacing: -0.5px;
+
+    }
+    .section1 div2 {
+      max-width: 440px;
+    padding: 20px 0 0;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: -0.5px;
+    color: #666;
+    }
+
+    .article1 {
+      display: block;
+      position: relative;
+      width: 35%;
+      padding: 0 30px 140px 0;
+    }
+
+    .article2 {
+      display: block;
+      margin-left: 130px;
+      position: relative;
+      width: 35%;
+      padding: 0 30px 140px 0;
+    }
+    
+    .article1 image_box1 {
+      box-sizing: border-box;
+      cursor: pointer;
+      display: block;
+      font-size: 20px;
+      left: 0px;
+      text-align: left;
+      text-decoration-line: underline;
+      text-decoration-style: solid;
+      text-decoration-thickness: auto;
+    }
+
+    .article2 imag e_box2 {
+      box-sizing: border-box;
+      cursor: pointer;
+      display: block;
+      font-size: 20px;
+      left: 0px;
+      text-align: left;
+      text-decoration-line: underline;
+      text-decoration-style: solid;
+      text-decoration-thickness: auto;
+    }
+
+    .section2 text_box1 {
+      line-height: 30px;
+      font-size: 20px;
+      font-weight: 700;
+      }
+
+    .section2 ol {
+      display: flex;
+    
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="divUl">
+      <div class="box1">
+        <img src="https://rmkcdn.successfactors.com/c4444335/4a31a1a2-9f7e-471f-81d9-c.svg">
+      </div>
+      <div class='box2'>
+        <li>영입과정</li>
+        <li>영입공고</li>
+        <li>리서치프로그램</li>
+        <li>크루 복지</li>
+        <li>자주 묻는 질문</li>
+        <li>인재풀 등록</li>
+        <li>마이페이지</li>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div>
+      <div class="first_image_section">
+        <div></div>
+      </div>
+      <div class="first_title_section">
+        내일을 함께할 크루를 찾습니다</div>
+      <div class="section1">
+        <div class="article1">
+          <div1>당신을 영입합니다</div1><br>
+          <div2>채용하지 않고 영입합니다. 채용은 ‘사람을 골라 쓴다’는 뜻이지만, 영입은 ‘환영하고 받아들인다’는 뜻이기 때문입니다. 기대와 환대, 존중의 마음을 담아 새로운 크루를 맞이할 준비를
+            합니다.</div2><br>
+          <div image_box1><img src="https://rmkcdn.successfactors.com/c4444335/823acf5e-8708-49e6-91fe-9.png"><img src="https://rmkcdn.successfactors.com/c4444335/98bb918d-65a8-47e0-bc56-a.png"><br><u>영입공고 보기</u></div>
+        </div>
+        <div class="article2">
+          <div1>영입도 팀워크입니다</div1><br>
+          <div2>영입은 모든 크루들이 참여하는 중요한 의사결정 과정입니다. 충분한 대화와 수평적인 토론을 거쳐, 조직과 업무의 성격에 꼭 맞는 새 크루의 영입이 결정됩니다.</div2><br>
+          <div image_box2><img src="https://rmkcdn.successfactors.com/c4444335/823acf5e-8708-49e6-91fe-9.png"><img src="https://rmkcdn.successfactors.com/c4444335/afaf35e6-e543-4e5a-b99a-3.png">
+          <br><u>회사소개 보기</u></div>
+        </div><br>
+      </div>
+      <div class ="section2">
+        <div text_box1>영입 프로세스</div>
+        <div text_box2>카카오엔터프라이즈의 영입은 크루에 대한 기대와 존중, 팀워크의 가치를 생각하는데서 시작합니다.</div></div>
+        <nav>
+          <li></li>
+        </nav>
+        <img src="https://s.kakaoicdn.net/kep-static/kep-career/img_process_tech_m.png">
+        <ol>
+          <li>당신에게 어울리는 포지션을 지금 찾아보세요! 지원하신 서류를 꼼꼼히 확인하여 합격자에게는 코딩테스트 응시 안내를 드립니다.</li>
+          <li>테크직군은 코딩테스트를 기본으로 진행합니다. 코딩테스트 합격 후 지원 부서 크루와의 만남이 시작됩니다.</li>
+          <li>간결한 테크리뷰를 통해 인터뷰 전 지원 포지션과의 핏을 살펴봅니다. 제출하신 코딩테스트 답안을 작성한 로직에 대해 리뷰하고, 직무역량을 확인하는 대화를 나누게 됩니다.
+          </li>
+          <li>인터뷰는 일반적으로 2차에 나눠 진행됩니다. 경험, 업무, 지향점 등에 대해 충분한 대화를 나누며 서로를 알아갑니다. 인터뷰어가 많아도 놀라지 마세요! 팀워크를 지향하는
+            카카오엔터프라이즈에서는
+            팀원
+            모두가 인터뷰에 참석하기도 한답니다.</li>
+          <li>최종 합격 후 처우협의가 진행되며,
+            처우협의 후 입사일을 조율합니다.</li>
+          <li>카카오엔터프라이즈 합류를 환영합니다.
+            당신의 영어 호칭은 무엇인가요?</li>
+
+
+        </ol>
+
+        -세부 전형 내용은 공고마다 상이할 수 있습니다. 변동이 있는 경우 별도 안내를 드리고 있습니다.<br>
+        -포지션에 따라 테크리뷰가 생략되거나, 인터뷰가 한 차례로 통합되어 진행될 수 있습니다.<br>
+        -인터뷰를 불합격 했던 지원자가 재지원하고자 할 경우, 최종 지원일로부터 1년 경과 후 가능합니다.
+      </div>
+      <br>-----------------------------------------------<br>
+      <section3>
+        AI 기술을 통해 더 나은 세상을
+        만드는 여정에 함께해주세요.
+
+        영입공고 보러 가기
+      </section3>
+
+  </main>
+
+  <footer>
+    이용약관
+    개인정보처리방침
+    공지사항
+    회사소식
+    오시는 길
+    recruit.kx@kakaoenterprise.com
+
+  </footer>
+</body>
+
+</html>

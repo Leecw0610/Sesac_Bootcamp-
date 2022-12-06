@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="EUC-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2_CSS</title>
+</head>
+
+<body>
+    <h1>공부한 내용</h1>
+    <p>
+    <ol>
+        <li>
+            <h3>CSS란?</h3><br><strong>Cascading StyleSheets</strong><br>HTML 태그(요소) 등에 어떤 장식을 할지, 그 장식은 어떤 크기, 어떤 색깔, 어떤
+            폰트(글꼴)인지를 지정하는 언어
+            <img src="https://t1.daumcdn.net/cfile/tistory/99CA004C5E59D0F930"><br><br>
+        </li>
+        <li>
+            <h3>시멘틱 태그를 사용했을 때의 장점이 무엇인지 고민해보세요.</h3><br>
+            ; 관용적으로 쓰는 의미없는 div태그에 의미를 부여함으로써,<br> 자신 뿐만 아니라 다른 사람이 코드를 알아보고 이해하기 쉽다
+        </li><br>
+        <li><a href='https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Selectors'>
+                <h3>CSS Selector</h3>
+            </a><br>CSS 규칙을 적용할 요소를 정의</a>
+
+        </li><br>
+        <li>
+            <h3><a href='https://ofcourse.kr/css-course/position-%EC%86%8D%EC%84%B1'>CSS File Position</a></h3>
+
+            <ul>
+                <li>inline : html tag에 스타일을 지정하는 방식</li>
+                <li>internal : head 부분에 style태그를 쓰고 그 안에 적는 방식</li>
+                <li>external : ***.css라는 파일을 만들고 가져와서 사용하는 방식</li><br>
+            </ul>
+            -----------------------------------------------------------
+            <ul><br>
+                태그를 어떻게 위치시킬지를 정의<br><br>ex)#box1 { position: static; top: 20px; left: 30px; }<br>
+                <br>
+                <li>static </li><br>기본값 문서상 원래 있어야 하는 위치에 배치 <br><br><strong>position 속성이 static일 때는 top, left,
+                    bottom, right 속성값은 무시됨.</strong><br>
+                <br>
+                <li>relative </li><br>원래 위치에서 벗어나게 배치할 수 있음. 원래 위치를 상대적(relative)으로 배치시킨다.<br>top, bottom, left, right
+                속성을 이용해 얼마나 떨어지게 할 지 지정<br>
+                <br>
+                <li>absolute </li><br>배치 기준을 자신이 아닌 상위 요소에서 찾음<br>position: absolute인 요소는 HTML 문서 상에서 독립되어 앞뒤에 나온 요소와 더
+                이상 상호작용을 하지 않게 된다<br>
+                <br>
+                <li>fixed </li><br>요소를 항상 고정된(fixed) 위치에 배치<br>position: absolute인 요소와 마찬가지로 HTML 문서 상에서 독립되어 앞뒤에 나온 요소와
+                더 이상 상호작용을 하지 않음.<br>
+                <br>
+                <li>sticky</li><br>화면을 스크롤링해도 고정되어 움직이지 않음<br>
+            </ul>
+        </li><br>
+        <li><strong>
+                <h3>Box Model</h3>
+            </strong><br>
+            <br>
+
+
+            모든 HTML 요소는 박스(box) 모양으로 구성되며, 이것을 박스 모델(box model)이라고 부릅니다.<br>
+
+            박스 모델은 HTML 요소를 패딩(padding), 테두리(border), 마진(margin), 그리고 내용(content)으로 구분합니다.<br>
+            <img src="https://www.csssolid.com/images/box-model/css-box-model.png">
+        </li><br>
+        <li>
+            <h3>CSS Property</h3><br><br>HTML과 비슷하게, CSS도 특정한 기능을 하는들이 미리 정의되어 있으며,
+
+            이를 활용하여 태그의 스타일을 정의 할 수 있다.
+            속성: 값 의 형태로 사용되며, 여러 속성끼리는 ;를 통해 구분됩니다.<br><br>
+            <img src="https://blog.kakaocdn.net/dn/nFSa4/btqXSnL8dkG/9BNwlcbyoerJLmkZLpiaRk/img.png">
+            <ul>
+                <li>Background<br><br>태그의 배경을 지정하는 속성으로, font 속성과 비슷하게 세부적인 속성들을 한번에 쓸 수 있는 속성입니다.<br><br></li>
+
+                <li>Font<br><br>font 속성은 글자의 폰트를 정의하는 속성<br>(style, weight, variant, size, height, family)<br><br></li>
+
+                <li>Color<br><br>글자의 색상<br><br></li>
+
+                <li>Width/Height<br><br>가로 길이, 세로 길이<br><br></li>
+
+                <li>Position<br><br>태그를 어떻게 위치시킬지를 정의(*4번 참조)<br><br></li>
+
+                <li><a href='https://studiomeal.com/archives/197'>flex</a><br><br>레이아웃 배치 전용 기능<br>기존 방식보다 훨씬 강력하고 편리한
+                    기능보유<br><img src="https://studiomeal.com/wp-content/uploads/2020/01/02.jpg">
+                    <ul><br>
+                        <li>div.container<br><br>display: flex; / flex-direction(배치        방향)
+                            / flex-wrap (줄넘김 처리 설정) / justify-content (메인축 방향 아이템 정렬) / align-items (수직축 방향 정렬) /
+                            align-content (여러행 정렬) </li><br>
+                        <li>div.item<br><br>flex-basis / flex-grow / flex-shrink / flex( 앞의 세개를 한번에 표현) / align-self
+                            (수직축 아이템 정렬)/ order (배치 순서)/ z-index (숫자가 클수록 위로)</li>
+                    </ul>
+                </li><br>
+
+                <li>flexbox froggy <br><br>CSS코드 게임으로 Flexbox의 속성을 요구한대로 입력하면 다음 단계로 넘어갈 수 있는 게임<br><br></li><a
+                    href="https://flexboxfroggy.com/#ko">⭐️ Flexbox Froggy로 이동 ⭐️ </a><br><br>
+
+                <li>overflow<br> 요소의 콘텐츠가 너무 커서 요소의 블록 서식 맥락에 맞출 수 없을 때의 처리법을 지정<br></li>
+
+                <li>transform<br>CSS 스타일 변경을 부드럽게 표현하기 위해 duration(지속시간)을 부여하여 속도를 조절<br>요소에 이동 회전 확대축소, 비틀기 등의 효과<br>
+                </li>
+
+                <li>animation<br>css의 애니메이션 속성으로 동적인 효과 부여<br></li>
+            </ul>
+        </li><br>
+        <li>
+            <h3>반응형 웹이란?</h3>
+            다양한 디바이스와 다양한 크기의 화면에서 일관되게 잘 작동하는 웹 페이지를 제작하는 일
+            <br><br>* 반응형 웹 디자인과 적응형 웹 디자인의 차이점은 무엇입니까?<br><br>반응형 웹 디자인은 다양한 디바이스의 다양한 화면 크기에 유연하게 적응합니다. 반응형 웹 디자인은
+            사용자가 뷰포트에서 선택한 모든 치수에 맞게 달라지고, CSS 미디어 쿼리를 사용하여 다양한 스타일에 맞춰 조정합니다.
+
+            반면 적응형 디자인은 중단점을 바탕으로 정적 레이아웃을 사용합니다. 중단점이란 최상의 경험을 제공하기 위해 웹 사이트 콘텐츠 및 디자인을 조정하는 지점으로서 일반적으로 창 또는 화면 치수에 따라
+            달라집니다. 중단점은 사용자 디바이스의 현재 화면 크기를 감지하여 가장 일반적인 화면 너비에 맞게 미리 디자인된 레이아웃을 로드합니다. 그러나 사용자가 브라우저 창 크기를 조정하는 등 화면
+            크기를 변경하면 적응하지 못합니다.
+            반응형 웹 디자인은 적응형 웹 디자인이 고려하지 않는 모든 크기를 다양하게 고려합니다. 그래서 더 유연하지만, 구현하기가 더 어렵습니다. 반면 적응형 디자인은 웹 사이트를 세 가지 버전으로
+            구축하는 것과 같고, 이들 버전은 사용자의 선택에 따라 부적절해지기도 합니다.
+
+        </li><br>
+
+
+    </ol>
+    </p>
+</body>
+
+</html>
