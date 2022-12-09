@@ -1,0 +1,40 @@
+html {
+    background: rgb(200, 200, 200);
+}
+h1 {
+    width: 100%;
+    height: 200px;
+    color:rgb(255, 255, 255);
+    font-size: 50px;
+    background: rgb(0, 0, 0);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    margin-top: 20px;
+}
+
+#toDoList {
+    margin-top: 40px;
+}
+
+text {
+    font-size: 60px;
+}
+
+#todo-list {
+    width: 50%;
+}
+
+#todo-list div {
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#todo-list div span {
+    
+}
