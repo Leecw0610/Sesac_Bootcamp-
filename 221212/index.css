@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 1px solid pink;
+}
+
+ul div {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
