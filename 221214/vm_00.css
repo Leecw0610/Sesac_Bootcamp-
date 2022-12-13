@@ -1,0 +1,168 @@
+body {
+font-family: sans-serif;
+}
+
+/* 처음엔 현재 금액이 0원이므로 전부 빨간색으로 초기화한다 */
+#품목,
+#품목,
+#품목 {
+color: red;
+}
+
+main {
+    display :flex;
+}
+
+main section {
+    display: flex;
+    width: 33%;
+    border: 1px solid rgb(255, 0, 230);
+}
+
+main div {
+    width: 33%;
+}
+
+h1 {
+    display: flex;
+
+}
+
+
+h1 div img {
+    width: 55px;
+    height: 55px;
+}
+
+nav {
+    display: flex;
+    width: 33%;
+}
+
+.section1 div {
+    border: 1px solid blue;
+    width: 60px;
+    height: 60px;
+}
+
+nav button {
+    width: 100%;
+}
+
+.jumbotron{
+    padding:2rem 1rem;margin-bottom:2rem;background: linear-gradient(rgba(0, 0, 120, 0.5), rgba(255, 255, 0, 0.5)),
+    url("https://sesac.seoul.kr/static/common/images/www/temp/thumbnail.png") ;border-radius:.3rem;
+}
+
+
+#jumbotron  {
+
+
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+                      url("images/soft-drink.png");
+    
+        Copy to Clipboard
+    
+    Choose example 4
+    
+    
+    
+        
+            
+}
+
+
+.section1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 60%;
+    width: 33%;
+    position: static;
+}
+
+.section2 {
+    border: 1px solid pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 33%;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.section2 ul {
+    font-size: 8px ;
+    padding: 0%;
+}
+
+.section2 ul p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.section3 {
+    border: 1px solid yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 33%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+
+.section3 input {
+    height: 25px;
+    width: 60px;
+    display: flex;
+    justify-content:center ;
+    align-items:center ;
+    
+
+}
+
+#current {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.product div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.product div img{
+    width: 55px;
+    height: 55px; 
+    disply: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.product p {
+    font-size: 8px;
+}
+
+#s2_img img {
+    width: 55px;
+    height: 55px; 
+}
+
+#s3_img img {
+    width: 55px;
+    height: 55px; 
+}
+
+#account p {
+    font-size: 20px;
+    color: darkorchid;
+}

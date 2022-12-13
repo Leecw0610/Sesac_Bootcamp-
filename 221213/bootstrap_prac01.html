@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+    />
+    <!-- 내가 추가한 CSS-->
+    <link rel="stylesheet" href="bootstrap_prac01.css" />
+    <!-- 부가적인 테마 -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"
+    />
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script
+      defer
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="jumbotron">
+        <h1>개발자의 삶</h1>
+        <p>낄낄낄</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+      </div>
+    <div
+      id="carousel-example-generic"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carousel-example-generic"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img
+            src="https://blog.kakaocdn.net/dn/dYX6k8/btrzbGT2KT4/ILq2pR7eNiWzknVETKCGR0/img.jpg"
+            alt="..."
+          />
+          <div class="carousel-caption">...</div>
+        </div>
+        <div class="item">
+          <img
+            src="https://www.greenart.co.kr/upimage/new_editor/20212/20210201112021.jpg"
+            alt="..."
+          />
+          <div class="carousel-caption">...</div>
+        </div>
+        <div class="item">
+          <img
+            src="https://storage.googleapis.com/jjalbot/2019/01/dR5gNLqyMj/8YRAkTWcy.png"
+            alt="..."
+          />
+          <div class="carousel-caption">...</div>
+        </div>
+        <div class="item">
+          <img
+            src="https://image.fmkorea.com/files/attach/new/20201224/486616/1588105683/3282215235/8cc586734ac2d2403688c6c271b01a35.jpg"
+            alt="..."
+          />
+          <div class="carousel-caption">...</div>
+        </div>
+        <div class="item">
+          <img
+            src="https://scontent-gmp1-1.xx.fbcdn.net/v/t1.6435-9/53563455_887180098307689_1852921330412814336_n.png?_nc_cat=100&ccb=1-7&_nc_sid=973b4a&_nc_ohc=xUvHxU1Z4-0AX8Dc_0a&_nc_ht=scontent-gmp1-1.xx&oh=00_AfBESMnkBPs_ZWx_zNkqFYxVHx76mghr-PnXE2resHpeFw&oe=63BF7103"
+            alt="..."
+          />
+          <div class="carousel-caption">...</div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a
+        class="left carousel-control"
+        href="#carousel-example-generic"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="glyphicon glyphicon-backward" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="right carousel-control"
+        href="#carousel-example-generic"
+        role="button"
+        data-slide="next"
+      >
+        <span class="glyphicon glyphicon-forward" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <div class="dropdown">
+      <button
+        class="btn btn-default dropdown-toggle"
+        type="button"
+        id="dropdownMenu1"
+        data-toggle="dropdown"
+        aria-expanded="true"
+      >
+        Dropdown
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+        <li role="presentation">
+          <a role="menuitem" tabindex="-1" href="#">Action</a>
+        </li>
+        <li role="presentation">
+          <a role="menuitem" tabindex="-1" href="#">Another action</a>
+        </li>
+        <li role="presentation">
+          <a role="menuitem" tabindex="-1" href="#">Something else here</a>
+        </li>
+        <li role="presentation">
+          <a role="menuitem" tabindex="-1" href="#">Separated link</a>
+        </li>
+      </ul>
+    </div>
+    <div class="dropup">
+      <button
+        class="btn btn-default dropdown-toggle"
+        type="button"
+        id="dropdownMenu2"
+        data-toggle="dropdown"
+        aria-expanded="true"
+      >
+        Dropdown
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+        <li role="presentation">
+          <a role="menuitem" tabindex="-1" href="#">Action</a>
+        </li>
+        <li role="presentation">
+          <a role="menuitem" tabindex="-1" href="#">Another action</a>
+        </li>
+        <li role="presentation">
+          <a role="menuitem" tabindex="-1" href="#">Something else here</a>
+        </li>
+        <li role="presentation">
+          <a role="menuitem" tabindex="-1" href="#">Separated link</a>
+        </li>
+      </ul>
+    </div>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <button
+      type="button"
+      id="myButton"
+      data-loading-text="Loading..."
+      class="btn btn-primary"
+      autocomplete="off"
+    >
+      Loading state
+    </button>
+
+    <script>
+      $("#myButton").on("click", function () {
+        var $btn = $(this).button("loading");
+        // business logic...
+        $btn.button("reset");
+      });
+    </script>
+
+    <a
+      class="btn btn-primary"
+      data-toggle="collapse"
+      href="#collapseExample"
+      aria-expanded="false"
+      aria-controls="collapseExample"
+    >
+      Link with href
+    </a>
+    <button
+      class="btn btn-primary"
+      type="button"
+      data-toggle="collapse"
+      data-target="#collapseExample"
+      aria-expanded="false"
+      aria-controls="collapseExample"
+    >
+      Button with data-target
+    </button>
+    <div class="collapse" id="collapseExample">
+      <div class="well">H i !</div>
+    </div>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

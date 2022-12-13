@@ -1,0 +1,37 @@
+.carousel-inner > .item > img {
+    max-width: 100%;
+    width:640px;
+    height:360px;
+}
+
+.carousel-example-generic {
+    display: flex;
+    vertical-align: middle;
+}
+
+.carousel-inner {
+    height: auto;
+}
+
+.carousel-control {
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: rgb(255, 238, 0);
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.jumbotron h1 {
+    font-size 80px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
