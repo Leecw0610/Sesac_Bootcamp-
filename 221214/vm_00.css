@@ -1,16 +1,23 @@
 body {
-font-family: sans-serif;
+    font-family: sans-serif;
+    margin: auto;
+    width: 1000px;
+}
+
+header {
+    width: 100%;
+    overflow: hidden;
 }
 
 /* 처음엔 현재 금액이 0원이므로 전부 빨간색으로 초기화한다 */
 #품목,
 #품목,
 #품목 {
-color: red;
+    color: red;
 }
 
 main {
-    display :flex;
+    display: flex;
 }
 
 main section {
@@ -39,36 +46,28 @@ nav {
     width: 33%;
 }
 
-.section1 div {
+.section1 .product div {
     border: 1px solid blue;
-    width: 60px;
-    height: 60px;
 }
 
 nav button {
     width: 100%;
 }
 
-.jumbotron{
-    padding:2rem 1rem;margin-bottom:2rem;background: linear-gradient(rgba(0, 0, 120, 0.5), rgba(255, 255, 0, 0.5)),
-    url("https://sesac.seoul.kr/static/common/images/www/temp/thumbnail.png") ;border-radius:.3rem;
+.container {
+    width: 100%;
 }
 
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(rgba(0, 0, 120, 0.5), rgba(255, 255, 0, 0.5)),
+        url("https://sesac.seoul.kr/static/common/images/www/temp/thumbnail.png");
+    border-radius: .3rem;
 
-#jumbotron  {
-
-
-    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
-                      url("images/soft-drink.png");
-    
-        Copy to Clipboard
-    
-    Choose example 4
-    
-    
-    
-        
-            
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 
@@ -76,7 +75,6 @@ nav button {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 60%;
     width: 33%;
     position: static;
 }
@@ -86,15 +84,16 @@ nav button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 33%;
+    height: 477px;
+    width: 330px;
     flex-wrap: wrap;
     flex-direction: column;
 }
 
 .section2 ul {
-    font-size: 8px ;
+    font-size: 8px;
     padding: 0%;
+    height: 240px;
 }
 
 .section2 ul p {
@@ -108,20 +107,19 @@ nav button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
     width: 33%;
     flex-wrap: wrap;
     flex-direction: column;
-    
+
 }
 
 .section3 input {
     height: 25px;
     width: 60px;
     display: flex;
-    justify-content:center ;
-    align-items:center ;
-    
+    justify-content: center;
+    align-items: center;
+
 
 }
 
@@ -131,18 +129,27 @@ nav button {
     align-items: flex-start;
 }
 
+.product {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .product div {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
+
+    width: 157px;
+    padding: 16px;
 }
 
-.product div img{
+.product div img {
     width: 55px;
-    height: 55px; 
-    disply: flex;
+    height: 55px;
+    display: flex;
     justify-content: center;
     align-items: center;
 
@@ -152,17 +159,63 @@ nav button {
     font-size: 8px;
 }
 
+#s2_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
 #s2_img img {
     width: 55px;
-    height: 55px; 
+    height: 55px;
+}
+
+#s3_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#s3_img p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #s3_img img {
     width: 55px;
-    height: 55px; 
+    height: 55px;
 }
 
-#account p {
+.account p {
     font-size: 20px;
     color: darkorchid;
 }
+
+#logList {
+    overflow: scroll;
+    
+    height: 200px;
+}
+
+#current {
+    color: darkgoldenrod;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.press {
+    border: 5px solid pink;
+}
+

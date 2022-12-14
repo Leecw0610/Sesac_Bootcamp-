@@ -19,21 +19,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <!--적용 css파일-->
     <link rel="stylesheet" href="vm_00.css" />
-    <script defer type="modules" src="vm_00.js"></script>
+    <!--적용 js파일-->
+    <script defer type="module" src="vm_00.js"></script>
   </head>
 
   <body>
     <header>
       <h1>
-        <div><img src="images/vending-machine.png" /></div>자판기
-    </h1>
+        <div><img src="images/vending-machine.png" /></div>
+        자판기
+      </h1>
       <div class="container">
         <div class="jumbotron">
           <h1 class="text-center">Vending Machine</h1>
           <p class="text-right">이상한 디저트 자판기</p>
           <p class="text-center">
-            <a class="bit btn-primary btn-lg" href="tt" role="button">Reset </a>
+            <a class="bit btn-primary btn-lg" href="http://127.0.0.1:5500/lecture/221214/vm_00.html" role="button">Reset </a>
           </p>
           <nav>
             <button type="button" class="btn btn-success">상품</button>
@@ -44,82 +47,75 @@
       </div>
     </header>
     <main>
-      <div class="section1">
+      <div class="section1 section">
         <!--상품파트입니다-->
         <!-- 판매하는 제품목록 (누르면 제품구매)-->
         <div class="product">
           <div id="coke">
             <img src="images/soft-drink.png" />
-            <p>콜라<input type="button" id="btn1" value="5000원" /></p>
+            <p>콜라<input type="button" id="btnA" data-price="5000" value="5000원" /></p>
           </div>
           <div id="cookie">
             <img src="images/cookie.png" />
-            <p>쿠키<input type="button" id="btn1" value="10000원" /></p>
+            <p>쿠키<input type="button" id="btnB" data-price="10000" value="10000원" /></p>
           </div>
           <div id="ice-cream">
             <img src="images/ice-cream.png" />
-            <p>아이스크림<input type="button" id="btn1" value="100원" /></p>
+            <p>아이스크림<input type="button" id="btnC" data-price="100" value="100원" /></p>
           </div>
           <div id="macaroon">
             <img src="images/dessert.png" />
-            <p>마카롱<input type="button" id="btn1" value="200원" /></p>
+            <p>마카롱<input type="button" id="btnD" data-price="200" value="200원" /></p>
           </div>
           <div id="water">
             <img src="images/pudding.png" />
-            <p>푸딩<input type="button" id="btn1" value="700원" /></p>
+            <p>푸딩<input type="button" id="btnE" data-price="700" value="700원" /></p>
           </div>
           <div id="water">
             <img src="images/waffle.png" />
-            <p>와플<input type="button" id="btn1" value="1500원" /></p>
+            <p>와플<input type="button" id="btnF" data-price="1500" value="1500원" /></p>
           </div>
           <div id="water">
             <img src="images/yoghurt.png" />
-            <p>요구르트<input type="button" id="btn1" value="10000원" /></p>
+            <p>요구르트<input type="button" id="btnG" data-price="10000" value="10000원" /></p>
           </div>
           <div id="water">
             <img src="images/cupcake.png" />
-            <p>컵케잌<input type="button" id="btn1" value="100000원" /></p>
+            <p>컵케잌<input type="button" id="btnH" data-price="100000" value="100000원" /></p>
           </div>
         </div>
       </div>
-      <div class="section2">
+      <div class="section2 section">
         <!--출력파트입니다-->
         <div id="s2_img">
-            <img src="images/vending.png" />
-            <img src="images/budget.png" />
+          <img src="images/vending.png" />
+          <img src="images/budget.png" />
         </div>
         <p>Log</p>
-        <ul>
-            <p>50000원이 입금되었습니다.</p>
-            <p>10000원이 입금되었습니다.</p>
-            <p>5000원이 입금되었습니다.</p>
-            <p>500원이 입금되었습니다.</p>
-            <p>100원이 입금되었습니다.</p>
-            <p>100원이 출금되었습니다.</p>
-            <p>100원이 출금되었습니다.</p>
-            <p>100원이 출금되었습니다.</p>
-            <p>잔액이 부족합니다.</p>
+        <ul id="logList">
         </ul>
         <!-- current는 현재 금액을 표시-->
-        <p>Current account: <span id="current"></span></p>
-        </div>
-      <div class="section3">
+        <p>Current account: 
+        <span id="current">
+          
+        </span>
+        </p>
+      </div>
+      <div class="section3 section">
         <!--금액파트입니다-->
         <div id="s3_img">
           <img src="images/atm.png" />
-        </div>
-        <div id="account">
-          <!-- 금액버튼 (누르면 금액추가)-->
           <p>Input</p>
-          <input type="button" id="btn1" value="50000원" />
-          <input type="button" id="btn1" value="10000원" />
-          <input type="button" id="btn2" value="5000원" />
-          <input type="button" id="btn3" value="1000원" />
-          <input type="button" id="btn4" value="500원" />
-          <input type="button" id="btn5" value="100원" />
         </div>
-
-        
+        <div class="account">
+          <!-- 금액버튼 (누르면 금액추가)-->
+          <input type="button" id="btn1" data-price="50000" value="50000원" />
+          <input type="button" id="btn2" data-price="10000" value="10000원" />
+          <input type="button" id="btn3" data-price="5000" value="5000원" />
+          <input type="button" id="btn4" data-price="1000" value="1000원" />
+          <input type="button" id="btn5" data-price="500" value="500원" />
+          <input type="button" id="btn6" data-price="100" value="100원" />
+        </div>
       </div>
     </main>
   </body>
