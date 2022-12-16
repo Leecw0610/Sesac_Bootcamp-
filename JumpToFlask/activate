@@ -1,0 +1,3 @@
+export FLASK_APP=pybo
+export FLASK_DEBUG=true
+source pybo_env/bin/activate
