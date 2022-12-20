@@ -1,0 +1,9 @@
+{% if answer_list %}
+<ul>
+  {% for answer in answer_list %}
+  <li><a href="/detail/{{ answer.id }}/">{{ answer.content }}</a></li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>답변이 없습니다.</p>
+{% endif %}
