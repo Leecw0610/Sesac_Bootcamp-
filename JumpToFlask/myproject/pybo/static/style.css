@@ -4,3 +4,8 @@ textarea {
 input[type="submit"] {
   margin-top: 10px;
 }
+
+.btn btn-warning {
+  width: 35px;
+  height: 35px;
+}
